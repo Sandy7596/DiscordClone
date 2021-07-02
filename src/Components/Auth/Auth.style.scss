@@ -1,0 +1,115 @@
+.alert-enter {
+  opacity: 0;
+  transform: translateY(-5rem) scale(1.1);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 400ms 100ms, transform 400ms 100ms;
+}
+.alert-exit {
+  opacity: 1;
+  transform: translateY(0rem) scale(1);
+  // transition: opacity 400ms, transform 400ms;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: translateY(-5rem) scale(1.1);
+  transition: opacity 400ms, transform 400ms;
+}
+
+.auth {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../Assets/img/auth-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  .wrapper {
+    width: 45rem;
+    min-height: 50vh;
+    height: auto;
+  }
+  .register,
+  .login {
+    position: absolute;
+    background-color: #36393f;
+    width: 45rem;
+    min-height: 50vh;
+    height: auto;
+    border-radius: 5px;
+    padding: 4rem 0;
+    form {
+      display: block;
+      margin: auto;
+      width: 35rem;
+    }
+    h2 {
+      font-size: 3rem;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h3 {
+      text-align: center;
+      color: #fff;
+      opacity: 0.4;
+      margin-bottom: 3rem;
+      font-size: 1.5rem;
+      letter-spacing: 1.5px;
+    }
+    label {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      opacity: 0.7;
+    }
+    input {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      display: block;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.1);
+      outline: none;
+      color: #fff;
+      &:hover {
+        border: 1px solid #000;
+      }
+    }
+    a {
+      color: #7289da;
+      text-align: center;
+      margin: 2rem auto 0 0;
+      display: block;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+    button {
+      width: 100%;
+      padding: 1rem;
+      background-color: #7289d9;
+      border: none;
+      color: #fff;
+      font-size: 1.6rem;
+      cursor: pointer;
+      &:hover {
+        background-color: #5b70bb;
+      }
+    }
+    .error {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #fc5185;
+      margin-top: 2rem;
+    }
+  }
+  .login {
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+}
