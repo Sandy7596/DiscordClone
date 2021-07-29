@@ -4,7 +4,7 @@ Built using React, Firebase and Redux
 
 ## Installation
 
-see [live demo](https://discordclone.netlify.app/).
+check live demo on (https://discordclone.netlify.app/).
 
 ```bash
 npm install
