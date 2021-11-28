@@ -2,7 +2,10 @@
 
 Built using React, Firebase and Redux
 
-## Installation
+# Languages
+JavaScript, SCSS, CSS, HTML
+
+## Installation and Demo
 
 check live demo on (https://discordclone.netlify.app/).
 
